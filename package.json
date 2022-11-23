@@ -1,0 +1,29 @@
+{
+  "name": "test-task-rulyu",
+  "version": "1.0.0",
+  "description": "test task to junior backend developer",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/supersniper1/testTaskRulyu.git"
+  },
+  "author": "denchikden1721@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/supersniper1/testTaskRulyu/issues"
+  },
+  "homepage": "https://github.com/supersniper1/testTaskRulyu#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "adm-zip": "^0.5.9",
+    "node-fetch": "^3.3.0"
+  }
+}
