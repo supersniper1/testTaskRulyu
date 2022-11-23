@@ -1,10 +1,13 @@
+// import {fileURLToPath} from 'url';
+// import path from 'path';
 import admZip from "adm-zip";
-import path from 'path';
-import {fileURLToPath} from 'url';
 import {getZip} from './src/get.zip.js';
 
-getZip()
+const promise = new Promise(((resolve, reject) => {
+    getZip()
+}))
 
-const zip = new admZip("./files/data.zip")
-zip.extractAllTo("./files/", true)
-
+promise.then(() => {
+    const zip = new admZip("./files/data.zip")
+    zip.extractAllTo("./files/", true)
+})
