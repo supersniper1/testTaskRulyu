@@ -1,8 +1,8 @@
-import fs from 'fs';
-import request from 'request';
-import admZip from "adm-zip";
+const fs = require('fs');
+const request = require('request');
+const admZip = require("adm-zip");
 
-export const getZip = () => {
+module.exports = () => {
     const req = request(
         {
             method: 'GET',
