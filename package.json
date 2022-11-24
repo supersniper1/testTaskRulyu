@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "test task to junior backend developer",
   "main": "index.js",
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
-    "dev": "nodemon index.js",
+    "dev": "node index.js",
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -25,6 +25,7 @@
   "dependencies": {
     "adm-zip": "^0.5.9",
     "iconv-lite": "^0.6.3",
-    "node-fetch": "^3.3.0"
+    "request": "^2.88.2",
+    "xml-js": "^1.6.11"
   }
 }
