@@ -1,4 +1,3 @@
-import admZip from "adm-zip";
 import {getZip} from './src/get.zip.js';
 
 // если сделать таким образом то на первый запуск он не успевает скачивать архив,
@@ -8,11 +7,4 @@ import {getZip} from './src/get.zip.js';
 // не успел найти решение чтобы все это выполнялось в один запуск.
 // попробовал: промисы, try catch, таймаут.
 
-let promise = new Promise(((resolve, reject) => {
-    getZip(resolve, reject)
-}))
-
-promise.then(() => {
-    const zip = new admZip("./files/data.zip")
-    zip.extractAllTo("./files/", true)
-})
+getZip()
