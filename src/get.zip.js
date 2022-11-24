@@ -2,7 +2,7 @@ const fs = require('fs');
 const request = require('request');
 const admZip = require("adm-zip");
 
-module.exports = () => {
+module.exports = (resolve, reject) => {
     const req = request(
         {
             method: 'GET',
@@ -16,6 +16,7 @@ module.exports = () => {
         const zip = new admZip("./files/data.zip")
         zip.extractAllTo("./files/", true)
     })
+    resolve()
 }
 
 
